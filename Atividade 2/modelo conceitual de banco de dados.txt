@@ -1,0 +1,30 @@
+criminosos: 
+id (PK)
+nome
+cpf
+idade
+
+vitimas:
+id (PK)
+nome 
+cpf
+idade 
+
+delitos:
+id (PK)	
+id_criminoso (chave-estrangeira)
+id_vitima (chave-estrangeira)
+crime 
+arma_utilizada
+
+criminosos -> vitimas
+1 m		1 m
+= M M
+
+vitimas -> delitos 
+1 m	     1 m
+= M M
+
+criminos -> delitos
+1 m 	    1 m
+= M M
